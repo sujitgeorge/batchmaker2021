@@ -40,7 +40,7 @@ class ExportButton extends React.Component {
     return this.props.matches.length > 0 ? (
       <Button>
         <CSVLink data={this.props.matches} headers={keys.Headers}>
-          Export to CSV
+          Export to batch
         </CSVLink>
       </Button>
     ) : null;

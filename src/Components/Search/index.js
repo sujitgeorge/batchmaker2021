@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
 import { FieldToSearch } from "../../Reducers/enums";
-import { setSearchAccessor, scanItem } from "../../Reducers/actions";
+import { setSearchAccessor } from "../../Reducers/actions";
 import { getSearchByFieldName } from "../../Helpers/utilities";
 
 const SearchDesign = styled.input`
@@ -91,8 +91,7 @@ function mapStateToProps(state) {
   };
 }
 const mapDispatchToProps = {
-  setSearchAccessor,
-  scanItem
+  setSearchAccessor
 };
 export default connect(
   mapStateToProps,

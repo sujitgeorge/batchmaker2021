@@ -10,10 +10,6 @@ export const setSearchAccessor = accessor => ({
   type: "UPDATE_FIELD_TO_SEARCH",
   accessor
 });
-export const scanItem = item => ({
-  type: "SCAN_ITEM",
-  item
-});
 export const openSettings = boolean => ({
   type: "OPEN_SETTINGS",
   boolean
@@ -49,7 +45,4 @@ export const setCustomColors = theme => ({
 export const changeNotificationSettings = settings => ({
   type: "UPDATE_NOTIFICATION_SETTINGS",
   settings
-});
-export const closeEasterEgg = () => ({
-  type: "CLOSE_EASTER_EGG"
 });

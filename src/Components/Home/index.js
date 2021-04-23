@@ -9,7 +9,7 @@ import FileUploader, { keys } from "../UploadFile/index";
 
 class Home extends React.Component {
   componentDidMount() {
-    this.props.setPageTitle("Home View");
+    this.props.setPageTitle("Batchmaker");
   }
   render() {
     return (

@@ -15,12 +15,10 @@ import HomeComponent from "./Components/Home/";
 
 import { ThemeProvider } from "./Helpers/Theme/themeProvider";
 
-import ScannedView from "./Components/Scanned/";
-import DiffView from "./Components/Diff/";
 import ExportView from "./Components/Export/index";
 
 import { NotificationsContainer } from "./Components/Notifications/index";
-import { EasterEggContainer } from "./Components/EasterEgg/index";
+
 import { StatefullSettings } from "./Components/Settings/index";
 const store = createStore(rootReducer, composeWithDevTools());
 injectGlobal`
@@ -43,8 +41,6 @@ function App() {
             <Navigation />
             <Switch>
               <Route path="/" exact={true} component={HomeComponent} />
-              <Route path="/scanned" exact={true} component={ScannedView} />
-              <Route path="/diff" exact={true} component={DiffView} />
               <Route path="/export" exact={true} component={ExportView} />
               <Route
                 path="*"
@@ -53,7 +49,6 @@ function App() {
             </Switch>
             <NotificationsContainer />
             <StatefullSettings />
-            <EasterEggContainer />
           </div>
         </Router>
       </ThemeProvider>

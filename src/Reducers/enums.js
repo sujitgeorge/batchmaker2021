@@ -1,4 +1,4 @@
 export const FieldToSearch = {
-  SerialNumber: 0,
+  Bank: 0,
   AssetTag: 1
 };

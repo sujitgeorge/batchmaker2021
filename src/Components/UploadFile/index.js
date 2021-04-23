@@ -5,17 +5,14 @@ import { fileUploaded } from "../../Reducers/actions";
 import styled from "styled-components";
 
 export const keys = [
-  { Header: "Serial Number", accessor: "SN" },
-  { Header: "Asset Tag", accessor: "asset_tag" },
-  { Header: "Name", accessor: "Name" },
-  { Header: "Status", accessor: "status" },
-  { Header: "Make", accessor: "make" },
-  { Header: "Model", accessor: "model" },
-  { Header: "Device Type", accessor: "device_type" },
-  { Header: "Cabinet", accessor: "Cabinet" },
-  { Header: "U Height", accessor: "U_Height" },
-  { Header: "U ID", accessor: "UID" },
-  { Header: "Slot", accessor: "slot" }
+  { Header: "Invoice Number", accessor: "invoice_number" },
+  { Header: "BPAY Biller Code", accessor: "biller_code" },
+  { Header: "BPAY CRN", accessor: "crn" },
+  { Header: "Due Date", accessor: "due_date" },
+  { Header: "Subtotal", accessor: "subtotal" },
+  { Header: "GST", accessor: "gst" },
+  { Header: "Total", accessor: "total" }
+
 ];
 const StyledInput = styled.input`
     -webkit-appearance: none;

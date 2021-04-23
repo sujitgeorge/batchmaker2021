@@ -4,7 +4,7 @@ import { HeaderDesign, Title } from "./Theme/styled";
 
 class Header extends React.Component {
   render() {
-    const title = "CatScan";
+    const title = "BPAY Batchmaker";
     return (
       <HeaderDesign>
         <Title>{`${

@@ -16,12 +16,6 @@ class NavigationComponent extends React.Component {
             <Tab isActive={this.props.location.pathname === "/"}>
               <Link to="/">Home</Link>
             </Tab>
-            <Tab isActive={this.props.location.pathname === "/scanned"}>
-              <Link to="/scanned">Scanned</Link>
-            </Tab>
-            <Tab isActive={this.props.location.pathname === "/diff"}>
-              <Link to="/diff">Mis Matched</Link>
-            </Tab>
             <Tab isActive={this.props.location.pathname === "/export"}>
               <Link to="/export">Export</Link>
             </Tab>

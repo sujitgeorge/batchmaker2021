@@ -54,7 +54,7 @@ class Modal extends React.Component {
   }
 
   hideModal = () => {
-    this.props.clickOut && !this.state.inContent && this.state.onBlanket
+    return this.props.clickOut && !this.state.inContent && this.state.onBlanket
       ? this.props.callback()
       : null;
   };
