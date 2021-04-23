@@ -4,9 +4,7 @@ import { toast } from "react-toastify";
 import { uuidv4 } from "../Helpers/utilities";
 
 const defaultState = {
-  isEasterEgg: false,
   fileUploaded: false,
-  scanned: [],
   importedData: [],
   matches: [],
   diff: [],
@@ -33,11 +31,7 @@ const defaultState = {
 
 function store(state = defaultState, action) {
   switch (action.type) {
-    case "CLOSE_EASTER_EGG":
-      return {
-        ...state,
-        isEasterEgg: false
-      };
+  
     case "UPDATE_NOTIFICATION_SETTINGS":
       return {
         ...state,
